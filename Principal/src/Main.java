@@ -3,6 +3,12 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner read = new Scanner(System.in);
+
+        MayorEntreDos(read);
+
+    }
+
+    public static void MayorEntreDos(Scanner read){
         int a, b;
 
         System.out.println("Ingrese un numero entero:");
