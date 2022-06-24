@@ -1,9 +1,13 @@
 import java.util.Scanner;
 
 public class Main {
-    public static void Pagos(){
+    public static void main(String[] args){
         Scanner read = new Scanner(System.in);
 
+        AjusteDePrecio(read);
+    }
+
+    public static void AjusteDePrecio(Scanner read){
         String producto;
         float precio;
         byte met_pago;
@@ -23,9 +27,9 @@ public class Main {
             }
             switch (met_pago) {
                 case 1: precio *= 0.85;
-                        break;
+                    break;
                 case 3: precio *= 1.1;
-                        break;
+                    break;
             }
             System.out.println("Producto:"+producto+" - Precio:"+precio);
             System.out.println("Desea ingresar otro producto? (S/N)");
