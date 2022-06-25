@@ -4,6 +4,10 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner read = new Scanner(System.in);
+        EstadoDeCursadaDeEstudiantes(read);
+    }
+
+    public static void EstadoDeCursadaDeEstudiantes(Scanner read){
         float n1, n2, n3, prom;
         String cursante;
 
@@ -37,6 +41,6 @@ public class Main {
             System.out.printf("-Estudiante:"+cursante+".\n-Promedio: "+prom+".\n-Situación: Aprobado.");
         else
             System.out.printf("-Estudiante:"+cursante+".\n-Promedio: "+prom+".\n-Situación: Promociado.");
-
     }
 }
+
